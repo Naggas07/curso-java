@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -69,6 +70,24 @@ public class App {
         letra = entrada.next().charAt(0);
 
         System.out.println("variable a imprimir = " + letra);
+
+        // entrada y salida de datos por JOptionPane por ventabas emergentes
+
+        String newCadena;
+        int newInt;
+        char newcaracter;
+        double newDecimal;
+
+        newCadena = JOptionPane.showInputDialog("introduce una cadena");
+        newInt = Integer.parseInt(JOptionPane.showInputDialog("introduce un Entero"));
+        newcaracter = JOptionPane.showInputDialog("ponme un caracter: ").charAt(0);
+        newDecimal = Double.parseDouble(JOptionPane.showInputDialog("Dame un decimal: ")); // en vez "," como en consola
+                                                                                           // aqui si o si "."
+
+        JOptionPane.showMessageDialog(null, "La cadena es: " + newCadena);
+        JOptionPane.showMessageDialog(null, "El numero entero es: " + newInt);
+        JOptionPane.showMessageDialog(null, "El caracter es: " + newcaracter);
+        JOptionPane.showMessageDialog(null, "El float es: " + newDecimal);
 
     }
 }
