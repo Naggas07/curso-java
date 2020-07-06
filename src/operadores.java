@@ -23,5 +23,32 @@ public class operadores {
         System.out.println("La división es: " + div);
         System.out.println("El resto es: " + resto);
 
+        entrada.close();
+
+        // operadores de asignacion
+
+        int numero = 10;
+
+        numero += 5;
+
+        System.out.println("datos: " + numero);
+
+        // Math
+
+        double raiz = Math.sqrt(9);
+
+        System.out.println("la raiz cuadrada es: " + raiz);
+
+        double base = 5, exponente = 2;
+        double resultado = Math.pow(base, exponente);
+
+        System.out.println("resultado -> " + resultado);
+
+        double numero2 = 4.56;
+        long resultado2 = Math.round(numero2);
+        double random = Math.random();
+
+        System.out.println(resultado2);
+        System.out.println(random);
     }
 }
