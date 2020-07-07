@@ -13,8 +13,12 @@ public class CalcDiasHora {
 
         hours = entrada.nextDouble();
         restHours = hours % 24;
+        hours -= restHours;
+        System.out.println(hours);
         days = Math.floor(hours / 24) % 7;
-        weeks = Math.floor(days / 7);
+        hours -= Math.floor(hours / 24);
+        System.out.println(hours);
+        weeks = Math.floor((hours / 24) / 7);
 
         System.out.println(weeks + " semanas, " + days + " días y " + restHours + " horas.");
 
