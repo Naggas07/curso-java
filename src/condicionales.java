@@ -14,6 +14,24 @@ public class condicionales {
         } else {
             JOptionPane.showMessageDialog(null, "El numero es distinto de 5");
         }
+
+        switch (numero) {
+            case 5:
+                JOptionPane.showMessageDialog(null, "El numero es 5");
+                break;
+            case 4:
+                JOptionPane.showMessageDialog(null, "El numero es 4");
+                break;
+            case 3:
+                JOptionPane.showMessageDialog(null, "El numero es 3");
+                break;
+            case 2:
+                JOptionPane.showMessageDialog(null, "El numero es 2");
+                break;
+            case 1:
+                JOptionPane.showMessageDialog(null, "El numero es 1");
+                break;
+        }
     }
 
 }
