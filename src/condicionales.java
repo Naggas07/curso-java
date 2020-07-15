@@ -31,6 +31,8 @@ public class condicionales {
             case 1:
                 JOptionPane.showMessageDialog(null, "El numero es 1");
                 break;
+            default:
+                JOptionPane.showMessageDialog(null, "El numero no esta en el rango de 1 a 5");
         }
     }
 
