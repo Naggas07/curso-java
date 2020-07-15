@@ -6,6 +6,7 @@ public class condicionales {
 
     public static void main(String[] args) {
         int numero, dato = 5;
+        String mensaje;
 
         numero = Integer.parseInt(JOptionPane.showInputDialog("Digita un numero:"));
 
@@ -14,6 +15,9 @@ public class condicionales {
         } else {
             JOptionPane.showMessageDialog(null, "El numero es distinto de 5");
         }
+
+        mensaje = (numero == dato) ? "El numero es 5" : "El numero es distinto de 5";
+        JOptionPane.showMessageDialog(null, mensaje);
 
         switch (numero) {
             case 5:
