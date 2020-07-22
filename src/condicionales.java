@@ -1,7 +1,5 @@
 import javax.swing.JOptionPane;
 
-import javax.swing.JOptionPane;
-
 public class condicionales {
 
     public static void main(String[] args) {

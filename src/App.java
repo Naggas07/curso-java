@@ -82,7 +82,7 @@ public class App {
         newInt = Integer.parseInt(JOptionPane.showInputDialog("introduce un Entero"));
         newcaracter = JOptionPane.showInputDialog("ponme un caracter: ").charAt(0);
         newDecimal = Double.parseDouble(JOptionPane.showInputDialog("Dame un decimal: ")); // en vez "," como en consola
-                                                                                           // aqui si o si "."
+                                                                                           // // aqui si o si "."
 
         JOptionPane.showMessageDialog(null, "La cadena es: " + newCadena);
         JOptionPane.showMessageDialog(null, "El numero entero es: " + newInt);
